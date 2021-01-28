@@ -1,0 +1,48 @@
+.logo{
+    margin-left: 15%;
+}
+
+.logoImage{
+    width: 130px;
+    height:39px
+}
+
+@media (max-width:367px){
+    .logoImage{
+        width: 100px;
+    }
+    .logo{
+        margin-left: 2%;
+    }
+}
+
+#navbarNavDropdown .navbar-nav li > a:hover{
+    color: rgb(231, 172, 21);
+}
+
+.menu-items{
+    margin-left: 10%;
+}
+
+
+@media (max-width:768px){
+    .menu-items{
+        margin-left: auto;
+    }
+    .menu-items li:not(:first-child){
+        padding-left: 0px;
+    }
+    .qr-icon{
+        padding-left: 0%;
+    }
+}
+
+@media (min-width:769px){
+    .menu-items li:not(:first-child){
+        padding-left: 20px;
+    }
+    .qr-icon{
+        padding-left: 20%;
+    }
+}
+

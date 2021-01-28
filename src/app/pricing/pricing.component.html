@@ -1,0 +1,58 @@
+<div class="priceRoot">
+  <section class="py-4 text-center container ">
+    <div class="row py-lg-1">
+      <div class="col-lg-6 col-md-8 mx-auto">
+        <h4 class="fw-light">Choose The Plan That’s right For Your Business</h4>
+        <div class="row">
+          <p class="lead text-muted col-lg-4">Strat your 7 Days Free trial</p>
+          <p class="lead text-muted col-lg-4">No credit card Required </p>
+          <p class="lead text-muted col-lg-4">Cancel Any Time</p>
+        </div>
+        <p class="lead text-muted details">Restaurants . Cafes . Hetels . Resorts . Pubs
+          <br /> Save 20% With annual Payments
+        </p>
+      </div>
+    </div>
+    <div class="btn-group" role="group" aria-label="Basic example">
+      <button type="button" [ngClass]="freeClicked ? 'btn clicked' : 'btn btn-secondary'"
+        (click)="freeButtonClicked()">Free</button>
+      <button type="button" [ngClass]="annualClicked ? 'btn clicked' : 'btn btn-secondary'"
+        (click)="annualButtonClicked()">Annual</button>
+      <button type="button" [ngClass]="monthlyClicked ? 'btn clicked' : 'btn btn-secondary'"
+        (click)="monthlyButtonClicked()">Monthly</button>
+    </div>
+  </section>
+  <div class="row pricingSection container-fluid">
+    <div class="col-lg-4 text-center">
+      <img class="illustration"src="assets/Illustration.png"  />
+      <p class="text-muted questions"><sub class="question">Have Any Questions About Your Plans</sub>&nbsp;&nbsp;<img class="whatsapp" src="assets/Watsaap Icon.png" /></p>
+    </div>
+    <div class="card-deck">
+      <div [ngClass]="freeClicked ? 'card smallScreenCard animatedCard' : 'card'">
+        <div class="card-body">
+          <h5 class="card-title">Free Trial</h5>
+          <button type="button" class="btn btn-secondary btn-sm subscribeButton">Subscribe</button>
+          <p class="card-text">Digital Menu<br>Atrractive Menu filters<br>Personalised QR Code<br>Mini
+            Games<br>E-Books<br>Audio Books</p>
+        </div>
+      </div>
+      <div [ngClass]="annualClicked ? 'card smallScreenCard animatedCard' : 'card'">
+        <div class="card-body">
+          <h5 class="card-title">Rs. 999</h5>
+          <button type="button" class="btn btn-secondary btn-sm subscribeButton">Subscribe</button>
+          <p class="card-text">Digital Menu<br>Atrractive Menu filters<br>Personalised QR Code<br>Mini
+            Games<br>E-Books<br>Audio Books</p>
+        </div>
+      </div>
+      <div [ngClass]="monthlyClicked ? 'card smallScreenCard animatedCard' : 'card'">
+        <div class="card-body">
+          <h5 class="card-title">Monthly</h5>
+          <button type="button" class="btn btn-secondary btn-sm subscribeButton">Subscribe</button>
+          <p class="card-text">Digital Menu<br>Atrractive Menu filters<br>Personalised QR Code<br>Mini
+            Games<br>E-Books<br>Audio Books</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+</div>

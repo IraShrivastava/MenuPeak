@@ -1,0 +1,131 @@
+.priceRoot{
+    background-image: url('../../assets/background.png');
+}
+
+.details{
+    font-weight: 600;
+}
+
+.clicked{
+    background-color: rgb(255, 239, 8);
+}
+
+.pricingSection{
+    margin-top: 2%;
+}
+
+.illustration{
+    width: 250px
+}
+
+.questions{
+    margin-top: 5%;
+}
+
+.question{
+    font-size: 15px;
+}
+
+.whatsapp{
+    width: 25px
+}
+
+.card-deck{
+    margin-left: -1%;
+    display: flex;
+    --distance: -4rem;
+    margin-bottom: 2%;
+}
+
+.card{
+    background: white;
+    width: fit-content;
+    border-radius: 0.5rem;
+    padding: 0.2rem;
+    box-shadow: 4px 4px 15px 2px rgba(black,0);
+    transition: all 0.5s ease-in-out;
+}
+
+.card:not(:first-child){
+    margin-left: -4rem;
+}
+
+.animatedCard{
+    transform: translate(-2rem, -2rem);
+}
+
+.animatedCard .subscribeButton:hover{
+    background-color: rgb(240, 174, 9);
+}
+
+.card-body{
+    align-content: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.card-text{
+    margin-top: 15%;
+}
+
+@media (max-width:991px){
+    .illustration{
+        display: flex;
+        flex-direction: column;
+        margin-left: 10%;
+    }
+    .questions{
+        display: flex;
+        flex-direction: column;
+        float: right;
+        margin-top: -12%;
+    }
+
+    .card-deck{
+        margin-left: 25%;
+        margin-top: 8%;
+    }
+}
+
+@media(max-width:768px){
+    .card-deck{
+        margin-left: 18%;
+        margin-top: 8%;
+    }
+}
+
+@media(max-width: 425px){
+    .card{
+        display: none;
+    }
+    .illustration{
+        display: block;
+        margin-left: 20%;
+    }
+    .questions{
+        display: block;
+        margin-top: 2%;
+        margin-left: 5%;
+    }
+    .smallScreenCard{
+        display: block;
+    }
+    .card:nth-child(1){
+        margin-left: 4rem;
+    }
+    .card:nth-child(2){
+        margin-left: 4rem;
+    }
+    .card:nth-child(3){
+        margin-left: 4rem;
+    }
+}
+
+@media (max-width:320px){
+    .illustration{
+        margin-left: 8%;
+    }
+    .question{
+        display: none;
+    }
+}
